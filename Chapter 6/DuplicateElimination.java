@@ -1,0 +1,72 @@
+//.6.12java
+import java.util.Scanner;
+
+public class DuplicateElimination {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] uniqueNumbers = new int[5];
+        int count = 0;
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter a number between 10 and 100: ");
+            int num = input.nextInt();
+
+            while (num < 10 || num > 100) {
+                System.out.print("Invalid input. Enter a number between 10 and 100: ");
+                num = input.nextInt();
+            }
+
+            boolean isDuplicate = false;
+            for (int j = 0; j < count; j++) {
+                if (uniqueNumbers[j] == num) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            if (!isDuplicate) {
+                uniqueNumbers[count] = num;
+                count++;
+            }
+
+            System.out.print("Unique values entered so far: ");
+            for (int j = 0; j < count; j++) {
+                System.out.print(uniqueNumbers[j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+Use code with caution.6.13The elements are set to zero row by row, from left to right. The table below represents the sequence numbers (1 to 15) in which each cell is updated:Col 0Col 1Col 2Col 3Col 4Row 012345Row 1678910Row 211121314156.14javapublic class VariableLengthArgument {
+    public static void main(String[] args) {
+        System.out.printf("Product of 2 and 3: %d%n", product(2, 3));
+        System.out.printf("Product of 4, 5, and 6: %d%n", product(4, 5, 6));
+        System.out.printf("Product of 1, 2, 3, 4, and 5: %d%n", product(1, 2, 3, 4, 5));
+    }
+
+    public static int product(int... numbers) {
+        if (numbers.length == 0) return 0;
+        int totalProduct = 1;
+        for (int num : numbers) {
+            totalProduct *= num;
+        }
+        return totalProduct;
+    }
+}
+//6.15java
+public class CommandLineSize {
+    public static void main(String[] args) {
+        int arraySize = 10;
+
+        if (args.length > 0) {
+            arraySize = Integer.parseInt(args[0]);
+        }
+
+        int[] array = new int[arraySize];
+        System.out.printf("%s%8s%n", "Index", "Value");
+
+        for (int counter = 0; counter < array.length; counter++) {
+            System.out.printf("%5d%8d%n", counter, array[counter]);
+        }
+    }
+}
