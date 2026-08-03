@@ -10,7 +10,6 @@ package Chapter8;
  */
 public class Date2nd {
     
-public class Date2nd {
     private int month;
     private int day;
     private int year;
@@ -24,13 +23,13 @@ public class Date2nd {
         0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
     };
 
-    public Date(int month, int day, int year) {
+    public Date2nd(int month, int day, int year) {
         this.month = month;
         this.day = day;
         this.year = year;
     }
 
-    public Date(String monthName, int day, int year) {
+    public Date2nd(String monthName, int day, int year) {
         this.year = year;
         this.day = day;
         this.month = 1;
@@ -42,7 +41,7 @@ public class Date2nd {
         }
     }
 
-    public Date(int dayOfYear, int year) {
+    public Date2nd(int dayOfYear, int year) {
         this.year = year;
         int targetDay = dayOfYear;
         this.month = 1;
@@ -90,4 +89,4 @@ public class Date2nd {
     }
 }
 
-}
+

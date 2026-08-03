@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TicTacToeTest {
     public static void main(String[] args) {
         TicTacToe game = new TicTacToe();
-        Scanner input = new Scanner(System.util.in);
+        Scanner input = new Scanner(System.in);
 
         while (true) {
             game.printBoard();

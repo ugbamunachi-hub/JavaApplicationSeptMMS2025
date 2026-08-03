@@ -4,11 +4,7 @@
  */
 package Chapter8;
 
-public class TicTacToe {
- public enum CellValue {
-    X, O, EMPTY
-}
-
+public class TicTacToe{
     private final CellValue[][] board;
     private boolean xTurn;
 

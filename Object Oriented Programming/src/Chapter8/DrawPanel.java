@@ -7,8 +7,8 @@ import java.security.SecureRandom;
 import javax.swing.JPanel;
 
 public class DrawPanel extends JPanel {
-    private SecureRandom randomNumbers = new SecureRandom();
-    private MyLine[] lines; 
+    private final SecureRandom randomNumbers = new SecureRandom();
+    private final MyLine[] lines; 
 
     public DrawPanel() {
         setBackground(Color.WHITE);

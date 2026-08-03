@@ -33,13 +33,13 @@ public class ExceptionDemo {
    
         try {
             throwExceptionA();
-        } catch (Exception exception) {
+        } catch (ExceptionA exception) {
             System.out.println("Caught: " + exception);
         }
 
         try {
             throwExceptionB();
-        } catch (Exception exception) {
+        } catch (ExceptionB exception) {
             System.out.println("Caught: " + exception);
         }
 
@@ -52,7 +52,7 @@ public class ExceptionDemo {
 
         try {
             throwIOException();
-        } catch (Exception exception) {
+        } catch (IOException exception) {
             System.out.println("Caught: " + exception);
         }
     }

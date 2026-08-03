@@ -1,7 +1,6 @@
 
 package Chapter8;
 
-public class TrafficLight {
     public enum TrafficLight {
     RED(30),
     GREEN(45),
@@ -16,5 +15,4 @@ public class TrafficLight {
     public int getDuration() {
         return duration;
     }
-}
 }

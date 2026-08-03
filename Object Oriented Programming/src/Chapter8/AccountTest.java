@@ -16,7 +16,7 @@ public class AccountTest {
         System.out.printf("%s balance: $%.2f%n", account1.getName(), account1.getBalance());
         System.out.printf("%s balance: $%.2f%n%n", account2.getName(), account2.getBalance());
 
-        Scanner input = new Scanner(System.util.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter deposit amount for account1: ");
         BigDecimal depositAmount = input.nextBigDecimal();

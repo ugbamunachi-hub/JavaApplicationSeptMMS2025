@@ -68,4 +68,16 @@ public class Time2 {
             ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12), 
             getMinute(), getSecond(), (getHour() < 12 ? "AM" : "PM"));
     }
+
+    void tick() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void incrementMinute() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void incrementHour() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     }
